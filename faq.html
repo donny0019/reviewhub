@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - ReviewHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- Header -->
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">
+                <i class="fas fa-mobile-alt text-blue-600"></i> Review<span class="text-blue-500">Hub</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8 font-medium">
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors">Home</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors">Blog</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors">Opportunities</a>
+            </div>
+            <a href="app-reviewer-signup.html" class="hidden md:inline-block bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-blue-700 transition-all shadow-md">
+                Get Started
+            </a>
+        </nav>
+    </header>
+
+    <!-- FAQ Section -->
+    <main class="py-20 md:py-28 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900">Frequently Asked Questions</h1>
+                    <p class="mt-4 text-lg text-gray-600">Have questions? We've got answers. Here are some of the most common queries we receive.</p>
+                </div>
+
+                <div class="space-y-6" id="faq-accordion">
+                    <!-- FAQ Item 1 -->
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="accordion-toggle flex justify-between items-center w-full p-6 text-left font-semibold text-lg text-gray-800 hover:bg-gray-50">
+                            <span>How do I get started with ReviewHub?</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content px-6 pb-6">
+                            <p class="text-gray-600">Getting started is simple! Just click on the "Get Started" or "Sign Up" button on our website, fill out the registration form, and complete a brief qualification test. Once approved, you'll gain access to our dashboard of available app review opportunities.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="accordion-toggle flex justify-between items-center w-full p-6 text-left font-semibold text-lg text-gray-800 hover:bg-gray-50">
+                            <span>How and when do I get paid?</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content px-6 pb-6">
+                            <p class="text-gray-600">We process payments through secure platforms like PayPal and direct bank transfer. Payments are made on a net-15 basis, meaning you will receive your earnings for all approved reviews from a given month by the 15th of the following month. You can track your earnings and request a payout directly from your user dashboard.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 3 -->
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="accordion-toggle flex justify-between items-center w-full p-6 text-left font-semibold text-lg text-gray-800 hover:bg-gray-50">
+                            <span>Are there any fees to join?</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content px-6 pb-6">
+                            <p class="text-gray-600">No, joining ReviewHub is completely free. We do not charge any registration fees or take a cut from your earnings. Our revenue comes from the app developers who pay for our platform to access quality user feedback.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="accordion-toggle flex justify-between items-center w-full p-6 text-left font-semibold text-lg text-gray-800 hover:bg-gray-50">
+                            <span>What kind of devices do I need?</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content px-6 pb-6">
+                            <p class="text-gray-600">Most of our testing opportunities require a modern smartphone or tablet running a recent version of iOS or Android. Some specialized tests may require specific devices, which will be clearly stated in the project description. During sign-up, you'll be asked to list the devices you own to be matched with relevant opportunities.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 5 -->
+                    <div class="border border-gray-200 rounded-lg">
+                        <button class="accordion-toggle flex justify-between items-center w-full p-6 text-left font-semibold text-lg text-gray-800 hover:bg-gray-50">
+                            <span>How many review opportunities can I expect to receive?</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content px-6 pb-6">
+                            <p class="text-gray-600">The number of opportunities varies based on your demographic profile, the devices you own, and the current needs of our clients. We recommend keeping your profile updated and checking the dashboard regularly for new projects. Active members with high-quality reviews are often prioritized for new and higher-paying tests.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-16">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
+                <div class="md:col-span-2 lg:col-span-1">
+                    <h3 class="text-xl font-bold mb-4">About Review<span class="text-blue-400">Hub</span></h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">ReviewHub is a premier platform dedicated to connecting app developers with a global community of insightful testers. We believe in the power of user feedback to create better digital experiences. Our mission is to provide a reliable and flexible way for individuals to earn income by sharing their valuable opinions on the latest mobile applications.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4 text-gray-200">Navigate</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Opportunities</a></li>
+                        <li><a href="app-reviewer-signup.html" class="text-gray-400 hover:text-white transition-colors">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4 text-gray-200">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="faq.html" class="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+                        <li><a href="terms-of-service.html" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4 text-gray-200">Disclaimer</h4>
+                     <p class="text-gray-400 text-sm leading-relaxed">The opportunities listed on ReviewHub are provided by third-party developers. Earnings are not guaranteed and may vary based on review complexity, time required, and individual performance. ReviewHub acts as a facilitator and is not responsible for the payment terms set by developers. Please perform your own due diligence.</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-center md:text-left">&copy; 2025 ReviewHub. All Rights Reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-facebook-f text-lg"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-twitter text-lg"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors"><i class="fab fa-instagram text-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const accordionToggles = document.querySelectorAll('.accordion-toggle');
+            accordionToggles.forEach(button => {
+                button.addEventListener('click', () => {
+                    const content = button.nextElementSibling;
+                    const icon = button.querySelector('i');
+
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        icon.classList.remove('rotate-180');
+                    } else {
+                        // Close other accordions
+                        document.querySelectorAll('.accordion-content').forEach(item => {
+                            item.style.maxHeight = null;
+                            item.previousElementSibling.querySelector('i').classList.remove('rotate-180');
+                        });
+                        content.style.maxHeight = content.scrollHeight + "px";
+                        icon.classList.add('rotate-180');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
