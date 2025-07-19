@@ -28,13 +28,13 @@
     <!-- Header -->
     <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 shadow-sm">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-gray-900">
+            <a href="index.html" class="text-2xl font-bold text-gray-900">
                 <i class="fas fa-mobile-alt text-blue-600"></i> Review<span class="text-blue-500">Hub</span>
             </a>
             <div class="hidden md:flex items-center space-x-8 font-medium">
-                <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors">Home</a>
-                <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors">Blog</a>
-                <a href="#" class="text-gray-600 hover:text-blue-600 transition-colors">Opportunities</a>
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 transition-colors">Home</a>
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 transition-colors">Blog</a>
+                <a href="index.html" class="text-gray-600 hover:text-blue-600 transition-colors">Opportunities</a>
             </div>
             <a href="#" class="hidden md:inline-block text-blue-600 font-semibold py-2 px-6">
                 Log In
@@ -52,7 +52,7 @@
                 </p>
             </div>
             <div class="bg-white p-8 md:p-10 rounded-2xl shadow-xl">
-                <form class="space-y-6" action="#" method="POST">
+                <form class="space-y-6" id="signup-form">
                     <div>
                         <label for="full-name" class="block text-sm font-medium text-gray-700">Full Name</label>
                         <div class="mt-1">
@@ -75,10 +75,10 @@
                     </div>
 
                     <div class="flex items-center">
-                        <input id="terms-and-privacy" name="terms-and-privacy" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                        <input id="terms-and-privacy" name="terms-and-privacy" type="checkbox" required class="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
                         <label for="terms-and-privacy" class="ml-2 block text-sm text-gray-900">I agree to the
-                            <a href="#" class="font-medium text-blue-600 hover:text-blue-500">Terms</a> and
-                            <a href="#" class="font-medium text-blue-600 hover:text-blue-500">Privacy Policy</a>.
+                            <a href="terms.html" class="font-medium text-blue-600 hover:text-blue-500">Terms</a> and
+                            <a href="privacy.html" class="font-medium text-blue-600 hover:text-blue-500">Privacy Policy</a>.
                         </label>
                     </div>
 
@@ -102,6 +102,17 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Add an event listener to the form's submit event
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+            // Prevent the default form submission which would reload the page
+            event.preventDefault();
+
+            // Redirect the user to the specified URL
+            window.location.href = 'https://appreviewhub.netlify.app/';
+        });
+    </script>
 
 </body>
 </html>
