@@ -2,5 +2,9 @@
 User-agent: *
 Allow: /
 
+# Disallow crawlers from accessing verification files
+Disallow: /google83dacd7bd747ec39.html
+Disallow: /BingSiteAuth.xml
+
 # Point crawlers to the sitemap
 Sitemap: https://appreviewhub.netlify.app/sitemap.xml
